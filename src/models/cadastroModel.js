@@ -5,8 +5,8 @@ const cadastroSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         default: mongoose.Types.ObjectId
     },
-    nome: { type: String },
-    email: { type: String },
+    nome : { type: String },
+    email: { type: String},
     senha: { type: String }
 }, {
     versionKey: false
