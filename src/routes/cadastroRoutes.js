@@ -2,10 +2,10 @@ const express = require("express")
 const router = express.Router()
 const controller = require("../controller/cadastroController")
 
-router.get("/pessoa/:id", controller.getPersonById)
-router.get("/pessoas", controller.getAllPeople)
-router.post("/pessoa/cadastrar", controller.addNewPerson)
-router.post("/pessoa/login", controller.personLogin)
-router.delete("/pessoa/:id", controller.deletePersonById)
+router.get("/usuario/:id", controller.getUserById)
+router.get("/usuario", controller.getAllUsers)
+router.post("/usuario/cadastrar", controller.addNewUser)
+router.post("/usuario/login", controller.userLogin)
+router.delete("/usuario/:id", controller.deleteUserById)
 
 module.exports = router
