@@ -12,7 +12,7 @@ const getAllCourses = async (req, res) => {
     }
 }
 
-const getByCategories = async (req, res) => {
+const getCategories = async (req, res) => {
 try {
     const coursesByCategories = await cursosModel.findByCategory(category)
     if (coursesByCategories == null) {
@@ -102,7 +102,38 @@ const updateCourseById = async (req, res) => {
             findCourse.category = category || findCourse.category
 
             const savedCourse = findCourse.save()
-            res.status(200).json({ message: "timeline atualizada com sucesso!", savedCourse })
+            res.status(200).json({ message: "curso atualizado com sucesso!", savedCourse })
+        })
+    } catch (error) {
+        res.status(500).json({ message: error.message })
+    }
+}
+
+const updateAllCourseById = async (req, res) => {
+    try {
+        const authHeader = req.get('authorization')
+
+        if (!authHeader) {
+            return res.status(401).json({ message: "Você precisa estar logado para atualizar informações sobre um curso!" })
+        }
+        const token = authHeader.split(" ")[1]
+        await jwt.verify(token, SECRET, async function (erro) {
+            if (erro) {
+                return res.status(403).send("erro de autenticação")
+            }
+
+            const findCourse = await cursoSchema.findById(req.params.id)
+
+            if (findCourse == null) {
+                return res.status(404).json({ message: "id inválido" })
+            }
+
+            findCourse.title = title || findCourse.title
+            findCourse.description = description || findCourse.description
+            findCourse.category = category || findCourse.category
+
+            const savedCourse = findCourse.save()
+            res.status(200).json({ message: "curso atualizado com sucesso!", savedCourse })
         })
     } catch (error) {
         res.status(500).json({ message: error.message })
@@ -138,10 +169,11 @@ const deleteCourseById = async (req, res) => {
 
 module.exports = {
     getAllCourses,
-    getByCategories,
+    getCategories,
     getByTitle,
     getCourseById,
     addNewCourse,
     updateCourseById, 
+    updateAllCourseById,
     deleteCourseById
 }
