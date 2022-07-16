@@ -13,15 +13,15 @@ const getAllCourses = async (req, res) => {
 }
 
 const getCategories = async (req, res) => {
-try {
-    const coursesByCategories = await cursosModel.findByCategory(category)
-    if (coursesByCategories == null) {
-        return res.status(404).json({ message: "categoria inválida" })
+    try {
+        const coursesByCategories = await cursosModel.findByCategory(category)
+        if (coursesByCategories == null) {
+            return res.status(404).json({ message: "categoria inválida" })
+        }
+        res.status(200).json(coursesByCategories)
+    } catch (error) {
+        res.status(500).json({ message: error.message })
     }
-    res.status(200).json(coursesByCategories)
-} catch (error) {
-    res.status(500).json({ message: error.message })
-}
 }
 
 const getByTitle = async (req, res) => {
@@ -34,12 +34,12 @@ const getByTitle = async (req, res) => {
     } catch (error) {
         res.status(500).json({ message: error.message })
     }
-    }
+}
 
-    const getCourseById = async (req, res) => {
-        const { id } = req.params
+const getCourseById = async (req, res) => {
+    const { id } = req.params
     try {
-        const findCourse  = await cursosModel.findById(id)
+        const findCourse = await cursosModel.findById(id)
         if (findCourse == null) {
             return res.status(404).json({ message: "id inválido" })
         }
@@ -62,7 +62,7 @@ const addNewCourse = async (req, res) => {
                 return res.status(403).send("erro de autenticação")
             }
             const { title, category, description, courseID } = req.body
-             
+
             const newCourse = new cursosModel({
                 title, category, description, courseID
             })
@@ -71,7 +71,7 @@ const addNewCourse = async (req, res) => {
             res.status(201).json({ message: "novo curso salvo com sucesso!", savedCourse })
         })
     } catch (error) {
-       res.status(500).json({ message: error.message })
+        res.status(500).json({ message: error.message })
     }
 }
 
@@ -160,8 +160,8 @@ const deleteCourseById = async (req, res) => {
             }
 
             await cursosModel.findByIdAndDelete(id)
-             res.status(200).json({ message: "curso deletado com sucesso!" })
-})
+            res.status(200).json({ message: "curso deletado com sucesso!" })
+        })
     } catch (error) {
         res.status(500).json({ message: error.message })
     }
@@ -173,7 +173,7 @@ module.exports = {
     getByTitle,
     getCourseById,
     addNewCourse,
-    updateCourseById, 
+    updateCourseById,
     updateAllCourseById,
     deleteCourseById
 }
