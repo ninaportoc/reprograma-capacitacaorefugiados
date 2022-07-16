@@ -1,17 +1,23 @@
-require('dotenv-safe').config
+require('dotenv-safe').config()
 const express = require("express")
 const cors = require("cors")
-const mongoose = require("./database/mongooseConnect")
-const cadastroRoutes = require("./routes/cadastroRoutes")
-const cursosRoutes = require("./routes/cursosRoutes")
+const dataBase = require("./database/mongooseConnect")
+const cursos = require("./routes/cursosRoutes")
+const cadastro = require("./routes/cadastroRoutes")
+const index = require("./routes/index")
+
 
 const app = express()
+
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect()
+dataBase.connect()
 
-app.use(cadastroRoutes)
-app.use(cursosRoutes)
+app.use("/cursos", cursos);
+app.use("/usuario", cadastro);
+app.use("/", index);
 
-module.exports= app
+
+
+module.exports = app

@@ -1,0 +1,42 @@
+{
+  "name": "reprograma-capacitacaorefugiados",
+  "version": "1.0.0",
+  "description": "Projeto final bootcamp {reprograma}, API que busca incluir cursos de capacitação que possam auxiliar refugiados a adentrarem no mercado de trabalho.",
+  "main": "server.js",
+  "scripts": {
+    "teste:watch": "jest --watchAll",
+    "test": "jest",
+    "start": "nodemon server.js",
+    "swagger-autogen": "node swagger.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninaportoc/reprograma-capacitacaorefugiados.git"
+  },
+  "keywords": [],
+  "author": "Marina Porto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ninaportoc/reprograma-capacitacaorefugiados/issues"
+  },
+  "homepage": "https://github.com/ninaportoc/reprograma-capacitacaorefugiados#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.18.1",
+    "jest": "28.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.4",
+    "save": "^2.5.0",
+    "swagger-autogen": "^2.21.5",
+    "swagger-ui-express": "^4.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "jest": "28.1.0",
+    "nodemon": "^2.0.19"
+  }
+}
