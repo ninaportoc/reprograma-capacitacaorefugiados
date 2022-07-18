@@ -61,10 +61,10 @@ const addNewCourse = async (req, res) => {
             if (erro) {
                 return res.status(403).send("erro de autenticação")
             }
-            const { title, category, description, courseID } = req.body
+            const { title, category, description } = req.body
 
             const newCourse = new cursosModel({
-                title, category, description, courseID
+                title, category, description
             })
 
             const savedCourse = await newCourse.save()

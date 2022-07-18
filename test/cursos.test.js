@@ -5,7 +5,6 @@ describe("GET route test", () => {
         "title": "teste curso",
         "description": "teste descrição",
         "category": "testes",
-        "courseID": ""
     });
     it("Deve chamar o schema e retornar o nome do curso", () => {
         expect(course.title).toBe("teste curso");
@@ -16,9 +15,6 @@ describe("GET route test", () => {
     it("Deve chamar o schema e retornar a categoria do curso", () => {
         expect(course.category).toStrictEqual(["testes"]);
     });
-    it("Deve chamar o schema e retornar o id do curso", () => {
-        expect(JSON.stringify(course.courseID).substring(1, (JSON.stringify(course.courseID)).length - 1)).toBe("");
-    });
 });
 
 describe("ADD route test", () => {
@@ -26,7 +22,6 @@ describe("ADD route test", () => {
         "title": "teste curso",
         "description": "teste descrição",
         "category": "testes",
-        "courseID": ""
     });
     it("Deve salvar o novo curso no banco de dados", () => {
         course.save().then((dados) => {
@@ -42,7 +37,6 @@ describe("UPDATE route test", () => {
             "title": "teste curso",
             "description": "teste descrição",
             "category": "testes",
-            "courseID": ""
         });
         course.title = "novo curso teste"
         course.save().then((dados) => {
@@ -57,7 +51,6 @@ describe("DELETE route test", () => {
             "title": "teste curso",
             "description": "teste descrição",
             "category": "testes",
-            "courseID": ""
         });
         course.save().then((dados) => {
             course.delete().then((novosdados) => {

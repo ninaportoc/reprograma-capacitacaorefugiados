@@ -27,7 +27,7 @@ const addNewUser = (req, res) => {
     const senhaComHash = bcrypt.hashSync(req.body.senha, 10)
     req.body.senha = senhaComHash
     const user = new cadastroModel(req.body)
-    user.save(function (err) {
+    user.save(function (error) {
         if (error) {
             res.status(500).json({ message: error.message })
         }
