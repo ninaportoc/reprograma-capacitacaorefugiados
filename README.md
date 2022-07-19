@@ -13,7 +13,7 @@
   
   ## Objetivos
   
-Segundo [matéria da CNN Brasil](https://www.cnnbrasil.com.br/nacional/pesquisa-conseguir-emprego-e-a-maior-dificuldade-de-refugiados-no-brasil/#:~:text=Conseguir%20emprego%20%C3%A9%20a%20maior%20dificuldade%20de%20refugiados%20no%20Brasil%2C%20diz%20pesquisa,-Levantamento%20da%20ONG&text=Uma%20pesquisa%20realizada%20pela%20ONG,66%25%20dos%20refugiados%20no%20Brasil.), Uma pesquisa realizada pela ONG Estou Refugiado, em parceria com o Instituto Qualibest, aponta que o desemprego ou a dificuldade para encontrar trabalho são os principais problemas enfrentados por 66% dos refugiados no Brasil. Pessoalmente, tive algumas experiências com relação ao tema de refúgio, essa foi a razão para a construção de uma *API* com banco de dados contendo cursos de capacitação para refugiados que querem aprimorar seus conhecimentos e adentrarem o mercado de trabalho brasileiro. Possibilitando que essas pessoas se cadastrem para incluirem novos cursos, gerando dados para que refugiados possam se inscrever nos cursos cadastrados na API. Muitos migrantes possuem formação, contudo, não conseguem revalidar seus diplomas quando chegam ao Brasil. Esse é um dos motivos pelos quais os cursos de capacitação são tão importantes.
+Segundo [matéria da CNN Brasil](https://www.cnnbrasil.com.br/nacional/pesquisa-conseguir-emprego-e-a-maior-dificuldade-de-refugiados-no-brasil/#:~:text=Conseguir%20emprego%20%C3%A9%20a%20maior%20dificuldade%20de%20refugiados%20no%20Brasil%2C%20diz%20pesquisa,-Levantamento%20da%20ONG&text=Uma%20pesquisa%20realizada%20pela%20ONG,66%25%20dos%20refugiados%20no%20Brasil.), uma pesquisa realizada pela ONG Estou Refugiado, em parceria com o Instituto Qualibest, aponta que o desemprego ou a dificuldade para encontrar trabalho são os principais problemas enfrentados por 66% dos refugiados no Brasil. Muitos migrantes possuem formação, contudo, não conseguem revalidar seus diplomas quando chegam ao Brasil. Esse é um dos motivos pelos quais os cursos de capacitação são tão importantes. Pessoalmente, tive algumas experiências com relação ao tema de refúgio, essa foi a razão para a construção de uma *API* com banco de dados que contém cursos de capacitação para refugiados que querem aprimorar seus conhecimentos e adentrarem o mercado de trabalho brasileiro. A *API* criada possibilita que essas pessoas se cadastrem e incluam novos cursos no banco de dados, gerando uma lista de cursos. 
   
   
   ### Funcionalidades:
@@ -78,7 +78,7 @@ Segundo [matéria da CNN Brasil](https://www.cnnbrasil.com.br/nacional/pesquisa-
   | ---------------------------------------  | -------------------------------------------------- | 
   | GET/cursos                               | Acessar aos cursos disponíveis                     |
   | GET/curso/categoria                      | Acessar aos cursos pelsa categoria                 |
-  | GET/curso/titulo                         | Acessar aos cursos pelo titulo                     |
+  | GET/curso/titulo                         | Acessar aos cursos pelo título                     |
   | GET/curso/:id                            | Acessar um curso específico por ID                 |
   | PUT/curso/:id                            | Realizar alterações em todo o curso                |
   | PATCH/curso/:id                          | Realizar alterações específicas em um curso        |
