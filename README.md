@@ -1,7 +1,7 @@
 <h1 align="center">
-    <img src="https://www.canva.com/design/DAFG3O1-QcM/sbfuJryc-r9FySx3hg4AKA/view?utm_content=DAFG3O1-QcM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" alt="quatro pessoas refugiadas, dois homens carregando malas, uma mulher e uma criança, um escrito chamado Capacitação Refugiados aparece acima da imagem" width="500">
-  <p align="center">CapacitacaoRefugiados - cursos de capacitação para refugiados<p>
-  </h1>
+    <img src="https://ibb.co/GVL8Q4T" alt="quatro pessoas refugiadas, dois homens carregando malas, uma mulher e uma criança, um escrito chamado Capacitação Refugiados aparece acima da imagem">
+<p align="center">CapacitacaoRefugiados - cursos de capacitação para refugiados<p>
+</h1>
   
   # :purple_heart: {reprograma} Projeto Final  - CapacitacaoRefugiados
   Projeto de conclusão do bootcamp de desenvolvimento Back-end da [{reprograma}](https://reprograma.com.br/) - Todas em Tech.
@@ -18,7 +18,8 @@ Segundo [matéria da CNN Brasil](https://www.cnnbrasil.com.br/nacional/pesquisa-
   
   ### Funcionalidades:
   
-  - [x] O schema contendo o cadastro na API deve conter: id (autogerado), nome,  e-mail e senha;
+  - [x] O schema do cadastro de usuários na API deve conter: id (autogerado), nome,  e-mail e senha;
+  - [x] O schema dos cursos na API deve conter: id (autogerado), título, descrição e categoria;
   - [x] A API deve permitir o cadastro de alguém que queira atualizar, deletar ou criar um novo curso;
   - [x] A API deve permitir a visualização dos cursos cadastrados;
   - [x] A API deve permitir alterações nos cursos;
@@ -95,9 +96,9 @@ Segundo [matéria da CNN Brasil](https://www.cnnbrasil.com.br/nacional/pesquisa-
   ------------
 
 <p align="center">
-Desenvolvido com :purple_heart: , inspirado por [README DiversityHUB-API](https://github.com/mflilian/DiversyHUB-API/blob/main/README.md)
+Desenvolvido com :purple_heart: , README inspirado por [DiversityHUB-API](https://github.com/mflilian/DiversyHUB-API/blob/main/README.md)
 </p>
 
-
-<img src="https://tenor.com/view/bt21-clouds-cute-heart-bunny-gif-17015539" width="250" height="250"/></h4><br>
-
+<p align="center">
+   <img src="https://tenor.com/view/bt21-clouds-cute-heart-bunny-gif-17015539"/>
+</p>
