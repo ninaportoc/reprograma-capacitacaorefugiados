@@ -43,7 +43,7 @@ const userLogin = (req, res) => {
         const senhaValida = bcrypt.compareSync(req.body.senha, user.senha)
 
         if (!senhaValida) {
-            return res.status(403).senha("Senha incorreta")
+            return res.status(403).send("Senha incorreta")
         }
 
         const token = jwt.sign({ email: req.body.email }, SECRET)
@@ -57,14 +57,14 @@ const updateUser = async (req, res) => {
         const authHeader = req.get('authorization')
 
         if (!authHeader) {
-            return res.status(401).json({ message: "Você precisa estar logado para deletar um curso!" })
+            return res.status(401).json({ message: "Você precisa estar logado para atualizar um usuário!" })
         }
         const token = authHeader.split(" ")[1]
         await jwt.verify(token, SECRET, async function (erro) {
             if (erro) {
                 return res.status(403).send("erro de autenticação")
             }
-            const findCadastro = await cadastroSchema.findById(req.params.id)
+            const findCadastro = await cadastroModel.findById(req.params.id)
 
             if (!findCadastro) {
                 findCadastro.nome = req.body.nome || findCadastro.nome

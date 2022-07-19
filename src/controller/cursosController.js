@@ -1,5 +1,4 @@
 const cursosModel = require("../models/cursosModel")
-const cadastroModel = require("../models/cadastroModel")
 const jwt = require("jsonwebtoken")
 const SECRET = process.env.SECRET
 
@@ -14,7 +13,8 @@ const getAllCourses = async (req, res) => {
 
 const getCategories = async (req, res) => {
     try {
-        const coursesByCategories = await cursosModel.findByCategory(category)
+        const { category } =  req.query
+        const coursesByCategories = await cursosModel.find({category: category})
         if (coursesByCategories == null) {
             return res.status(404).json({ message: "categoria inválida" })
         }
@@ -26,7 +26,8 @@ const getCategories = async (req, res) => {
 
 const getByTitle = async (req, res) => {
     try {
-        const coursesByTitle = await cursosModel.findByTitle(title)
+        const { title } =  req.query
+        const coursesByTitle = await cursosModel.find({title: title})
         if (coursesByTitle == null) {
             return res.status(404).json({ message: "título inválido" })
         }
@@ -121,8 +122,8 @@ const updateAllCourseById = async (req, res) => {
             if (erro) {
                 return res.status(403).send("erro de autenticação")
             }
-
-            const findCourse = await cursoSchema.findById(req.params.id)
+            const { title, description, category } = req.body
+            const findCourse = await cursosModel.findById(req.params.id)
 
             if (findCourse == null) {
                 return res.status(404).json({ message: "id inválido" })
