@@ -98,6 +98,6 @@ Segundo [matéria da CNN Brasil](https://www.cnnbrasil.com.br/nacional/pesquisa-
 Desenvolvido com :purple_heart: , inspirado por [README DiversityHUB-API](https://github.com/mflilian/DiversyHUB-API/blob/main/README.md)
 </p>
 
-<p align="center">
-    <img src="https://tenor.com/view/bt21-clouds-cute-heart-bunny-gif-17015539" width="250" height="250"/></h4><br>
-  </p>
+
+<img src="https://tenor.com/view/bt21-clouds-cute-heart-bunny-gif-17015539" width="250" height="250"/></h4><br>
+
