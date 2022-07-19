@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://ibb.co/GVL8Q4T" alt="quatro pessoas refugiadas, dois homens carregando malas, uma mulher e uma criança, um escrito chamado Capacitação Refugiados aparece acima da imagem">
+    <img src="https://lh3.googleusercontent.com/Zom4SBU6vNB085llQ3_IiyMRYdG8LXJQkdY0igoRCsEBmaXqbSSTOl6w2e5Zk2dYIOLuHzr7VTiJigCGH0JbnwsNevbhZzPXW-IDXI67nVrOQD30MdSsK78FRghEjWrDDLqFjgGCix4gvlteB5lYHsd8obUcqtjy4uj-kGOtvaDc-k0gmwZWAZP5-tD__ts07y-a97fKaVxBlh3FJNAKm5bccYjtHr1-cdotp3SJ3Ap72tqkQDhz2YfKcK07tTLjbO2G59VVQ2VsbrducdGtUVorVi3SlXfjlZUwEfPjFTuABAyWLwl_CVZcfe3MBjJahjVU4kJSzsjyzy0we8rq-0B9xo2BLcLUvH6DKMmtJ_mp68SuwqzUfK9XDvXaBnRiTVvRRX9wvshI5ZGw8vwzYyv8V8zT6E7cvAE3kAp0piwdVRyyKsnNyyVOqQYbMjG6yxUUm7aRocrUWq2XKwH5SQyrZQ3_IPILkj_P-zdfRkZv2jUjJz7B28GG-AJKov69uvHnkw9sNrAvPQ_fBg1gy85kYQ_sM81fhFt6hFV2KXFkwG7OmKrNyWmD8mjBs5g2uTkry7effjnJS80YblaswulTCslaYO2VF55_W6pkhCf9SZAp3XY56k1MWvXqESIhd2xd-MAe9rlvBM4suumXR_repeBduSAd_s0Y_i-XBa4NdT452szLUtVr3FQLIRNzDmij7Gme2FGX0pZ0zPFcuTD14VDFD2Ta4c93e0pMGv_QioSRoVfq0IEbHPc=w1016-h594-no?authuser=0" alt="quatro pessoas refugiadas, dois homens carregando malas, uma mulher e uma criança, um escrito chamado Capacitação Refugiados aparece acima da imagem" width="500">
 <p align="center">CapacitacaoRefugiados - cursos de capacitação para refugiados<p>
 </h1>
   
@@ -100,5 +100,5 @@ Desenvolvido com :purple_heart: , README inspirado por [DiversityHUB-API](https:
 </p>
 
 <p align="center">
-   <img src="https://tenor.com/view/bt21-clouds-cute-heart-bunny-gif-17015539"/>
+   <img src="https://i.pinimg.com/originals/0f/7c/ee/0f7cee86fc8fc9574be41f15f7204e03.gif"/>
 </p>
