@@ -11,7 +11,7 @@
     "http"
   ],
   "paths": {
-    "/cursos/cursos": {
+    "/cursos": {
       "get": {
         "description": "",
         "parameters": [],
@@ -25,27 +25,16 @@
         }
       }
     },
-    "/cursos/curso/categoria": {
+    "/curso/categoria": {
       "get": {
         "description": "",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "500": {
-            "description": "Internal Server Error"
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "type": "string"
           }
-        }
-      }
-    },
-    "/cursos/curso/titulo": {
-      "get": {
-        "description": "",
-        "parameters": [],
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -59,7 +48,30 @@
         }
       }
     },
-    "/cursos/curso/{id}": {
+    "/curso/titulo": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "title",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/curso/{id}": {
       "get": {
         "description": "",
         "parameters": [
@@ -90,6 +102,24 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "example": "any"
+                },
+                "description": {
+                  "example": "any"
+                },
+                "category": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
         "responses": {
@@ -185,7 +215,7 @@
         }
       }
     },
-    "/cursos/curso/cadastro": {
+    "/curso/cadastro": {
       "post": {
         "description": "",
         "parameters": [
@@ -202,9 +232,6 @@
                   "example": "any"
                 },
                 "description": {
-                  "example": "any"
-                },
-                "courseID": {
                   "example": "any"
                 }
               }
@@ -227,7 +254,7 @@
         }
       }
     },
-    "/usuario/usuario/{id}": {
+    "/usuario/{id}": {
       "get": {
         "description": "",
         "parameters": [
@@ -310,7 +337,7 @@
         }
       }
     },
-    "/usuario/usuario": {
+    "/usuario": {
       "get": {
         "description": "",
         "parameters": [],
@@ -324,7 +351,7 @@
         }
       }
     },
-    "/usuario/usuario/cadastrar": {
+    "/usuario/cadastrar": {
       "post": {
         "description": "",
         "parameters": [
@@ -351,7 +378,7 @@
         }
       }
     },
-    "/usuario/usuario/login": {
+    "/usuario/login": {
       "post": {
         "description": "",
         "parameters": [
