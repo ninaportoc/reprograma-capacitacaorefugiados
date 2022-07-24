@@ -38,7 +38,7 @@ Segundo [matéria da CNN Brasil](https://www.cnnbrasil.com.br/nacional/pesquisa-
 $ git clone https://github.com/ninaportoc/reprograma-capacitacaorefugiados
 
 # Entrar na pasta do repositório
-$ cd capacitacaorefugiados
+$ cd reprograma-capacitacaorefugiados
 
 # Instalar as dependências
 $ npm install
@@ -130,6 +130,9 @@ Caso esteja utilizando outro gerenciador de pacotes apenas altere o npm para seu
 2. Crie uma branch para realizar suas alterações: `git checkout -b feature/nome-da-nova-branch`
 3. Commit as alterações feitas e abra um pull request
 
+
+
+<p align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/marina-porto-carvalho-b50808176/" target="_blank"><img src="https://img.shields.io/badge/-Marina_Porto-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marina-porto-carvalho-b50808176/" target="_blank"></a> </p>
 
 ------------
 
